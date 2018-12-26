@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  dubbo:
+    application:
+      name: word-enquiry-consumer
+
+    registry:
+      address: zookeeper://localhost:2181
+
+    scan: demo.kilodleif.consumer.service
